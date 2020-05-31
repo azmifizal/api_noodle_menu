@@ -3,6 +3,10 @@
   "version": "1",
   "description": "rest api for provide dumy data from mongo to app",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "repository": "willbe in heroku (soon)",
   "author": "azmifizal <azmifizalfauzi@gmail.com>",
   "license": "MIT",
