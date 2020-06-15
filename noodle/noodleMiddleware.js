@@ -24,6 +24,7 @@ exports.getVariant = async (req, res, next) => {
   try {
     const variant = await Noodle.find({
       name: { $regex: req.params.variant, $options: "i" },
+      category: "makanan",
     });
     return res.status(200).json({ result: variant });
   } catch (error) {
