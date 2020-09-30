@@ -10,8 +10,12 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+// mongoose.connect(
+//   "mongodb://userNoodle:noodle123@ds157509.mlab.com:57509/portofolio",
+//   { useNewUrlParser: true, useUnifiedTopology: true }
+// );
 mongoose.connect(
-  "mongodb://userNoodle:noodle123@ds157509.mlab.com:57509/portofolio",
+  "mongodb+srv://userNoodle:noodle123@portofolio.2oiqu.mongodb.net/portofolio?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
